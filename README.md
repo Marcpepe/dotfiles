@@ -12,3 +12,4 @@
 - Clone the project : `git clone https://github.com/vbrajon/dotfiles .dotfiles`
 - Backup old config
 - Make symbolic links : `cd .dotfiles && ./init.sh`
+- Set zsh as default shell : `chsh`

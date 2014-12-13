@@ -1,6 +1,6 @@
 [user]
-  name  = Valentin Brajon
-  email = vbrajon@gmail.com
+  name  = Marc Perrin-Pelletier
+  email = marcpp@theodo.fr
 [core]
   editor = vim
   excludesfile = ~/.gitexcludes
@@ -11,7 +11,7 @@
 [alias]
   st  = status
   lg  = log -M --decorate --graph --oneline
-  ci  = commit
+  cm  = commit -m
   co  = checkout
   br  = branch
   pur = pull --rebase

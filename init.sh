@@ -12,6 +12,11 @@ ls ~/.vim/bundle/Vundle.vim || git clone https://github.com/gmarik/Vundle.vim.gi
 SCRIPT=$(readlink -f $0)
 SCRIPTPATH=`dirname $SCRIPT`
 
+# Atom
+mkdir ~/.atom
+touch ~/.atom/config.cson
+touch ~/.atom/keymap.cson
+
 rm ~/.atom/config.cson
 rm ~/.atom/keymap.cson
 rm ~/.gitconfig

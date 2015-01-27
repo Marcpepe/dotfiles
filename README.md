@@ -9,7 +9,7 @@
 - Set zsh as default shell : `chsh -s /bin/zsh` (you may need to restart your computer if stopping and reoping a terminal doesn't cut it)
 - Setup github ssh : 
 ```bash
-ssh-keygen -t rsa -C "marcpp@theodo.fr"
+ssh-keygen -t rsa -C "marc.perrinpelletier@gmail.com"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 ```

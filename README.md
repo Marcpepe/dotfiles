@@ -15,3 +15,14 @@ sudo apt-get update
 sudo apt-get install numix-icon-theme-circle numix-gtk-theme
 ```
 then set them in tweak tool
+
+
+## Troubleshooting
+
+#### Vim : Monokai not found
+```bash
+mkdir ~/.vim/colors
+touch ~/.vim/colors/monokai.vim
+ln -s ~/.dotfiles/monokai.vim ~/.vim/colors/monokai.vim
+```
+then change line "colorscheme Monokai" to "colorscheme monokai" in ~/.vimrc

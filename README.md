@@ -7,6 +7,17 @@
 - Clone the project : `git clone https://github.com/Marcpepe/dotfiles.git .dotfiles`
 - Make symbolic links : `cd .dotfiles && ./init.sh`
 - Set zsh as default shell : `chsh -s /bin/zsh` (you may need to restart your computer if stopping and reoping a terminal doesn't cut it)
+- Setup github ssh : 
+```bash
+ssh-keygen -t rsa -C "marcpp@theodo.fr"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+```
+- then add key to github (copy it first with following):
+```bash
+sudo apt-get install xclip
+xclip -sel clip < ~/.ssh/id_rsa.pub
+```
 
 ## Icons & Themes
 ```bash

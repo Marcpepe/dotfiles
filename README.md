@@ -37,3 +37,7 @@ touch ~/.vim/colors/monokai.vim
 ln -s ~/.dotfiles/monokai.vim ~/.vim/colors/monokai.vim
 ```
 then change line "colorscheme Monokai" to "colorscheme monokai" in ~/.vimrc
+
+#### Git keeps prompting me for my password
+
+This probably means that you have cloned https repos and not ssh

@@ -4,7 +4,7 @@
 - Install chrome and connect to your gmail account : you get all your favorites and nav bar automatically
 - Install atom
 - Install git / tmux / vim / zsh / curl with `sudo apt-get install git tmux vim zsh curl`
-- Clone the project : `git clone https://github.com/Marcpepe/dotfiles.git .dotfiles`
+- Clone the project : `git clone git@github.com:Marcpepe/dotfiles.git .dotfiles`
 - Make symbolic links : `cd .dotfiles && ./init.sh`
 - Set zsh as default shell : `chsh -s /bin/zsh` (you may need to restart your computer if stopping and reoping a terminal doesn't cut it)
 - Setup github ssh : 

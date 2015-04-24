@@ -1,6 +1,6 @@
 [user]
-  name  = Marc Perrin-Pelletier
-  email = marcpp@theodo.fr
+	name = Marcpepe
+	email = marc.perrinpelletier@gmail.com
 [core]
   editor = vim
   excludesfile = ~/.gitexcludes

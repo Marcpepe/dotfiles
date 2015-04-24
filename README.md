@@ -8,7 +8,8 @@
 - Make symbolic links : `cd .dotfiles && ./init.sh`
 - Update vim plugins by starting vim and `:source ~/.vimrc` then `:PluginInstall`
 - Update tmux with `tmux source ~/.tmux.conf`
-- Set new font for console (required by vim airline): in console, click Edit > Set profile preference. Then change font and font size.
+- Set new font for console (required by vim airline): in console, click Edit > Set profile preference. Then change font (Powerline) and font size.
+- Set C-M-Space (Toggle fullscreen), C-M-x (Close window) and C-M-b (launche browser) (C-M-t launches console by default)
 - Set zsh as default shell : `chsh -s /bin/zsh` (you may need to restart your computer if stopping and reoping a terminal doesn't cut it)
 - Setup github ssh : 
 ```bash

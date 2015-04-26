@@ -158,7 +158,21 @@ inoremap {<CR> {<CR>}<C-o>O
 " The sequence parens + brackets behaves nicely
 inoremap ({<CR> ({<CR>});<C-o>O
 " Remaps K to split a line (opposite of J) 
-:nnoremap K i<CR><Esc>
+nnoremap K i<CR><Esc>
+" To recognize Alt key in Gnome terminal
+let c='a'
+while c <= 'z'
+  exec "set <M-".c.">=\e".c
+  exec "map \e".c." <M-".c.">"
+  let c = nr2char(1+char2nr(c))
+endw
+set timeout ttimeoutlen=50
+" Remap page-up and page-down
+nnoremap <M-d> <C-d>
+nnoremap <M-u> <C-u>
+" Remap vim splits switching
+" nnoremap <C-h> <C-w><C-h>
+" --> see tmux-vim-navigator section
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/FUGITIVE\___
@@ -199,17 +213,6 @@ let g:multi_cursor_quit_key='<Esc>'
 " autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=darkgrey
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
-" ___/VIM-TMUX-NAVIGATOR\___
-"""""""""""""""""""""""""""""""""""""""""""""""""""""
-" let g:tmux_navigator_no_mappings = 1
-
-" nnoremap <silent> <M-h> :TmuxNavigateLeft<CR>
-" nnoremap <silent> <M-j> :TmuxNavigateDown<CR>
-" nnoremap <silent> <M-k> :TmuxNavigateUp<CR>
-" nnoremap <silent> <M-l> :TmuxNavigateRight<CR>
-" nnoremap <silent> <M-\> :TmuxNavigatePrevious<CR>
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/CTRLP\___
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " CtrlP settings
@@ -219,25 +222,23 @@ let g:ctrlp_working_path_mode = 0 " Enables the changing of the working dir
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""' " Use ag.vim
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
-" ___/CURSOR BEHAVIOR UNDER iTerm 2\___
-"""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Change cursor shape between insert and normal mode in iTerm2.app
-" tmux will only forward escape sequences to the terminal if surrounded by a DCS sequence
-" if exists('$TMUX')
-  " let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-  " let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-" else
-  " let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-  " let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-" endif
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/NERDCommenter\___
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sets an extra space in before comments
 let NERDSpaceDelims=1
 " Disable auto-comment, i.e. new line does not trigger the comment char sequence
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ___/TMUX-VIM-NAVIGATOR\___
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:tmux_navigator_no_mappings = 1
+
+nnoremap <silent> <M-h> :TmuxNavigateLeft<cr>
+nnoremap <silent> <M-j> :TmuxNavigateDown<cr>
+nnoremap <silent> <M-k> :TmuxNavigateUp<cr>
+nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
+" nnoremap <silent> <M-p> :TmuxNavigatePrevious<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/SYNTASTIC\___

@@ -91,8 +91,7 @@ set incsearch " Search as characters are entered
 set hlsearch " Highlight matches
 
 " Turn off search highlight
-" noremap <leader><leader> :nohlsearch<CR>
-nnoremap <leader><space> :nohls<CR>
+noremap <leader><leader> :nohlsearch<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/FOLDING\___

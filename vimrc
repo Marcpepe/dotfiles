@@ -92,6 +92,7 @@ set hlsearch " Highlight matches
 
 " Turn off search highlight
 noremap <leader><leader> :nohlsearch<CR>
+nnoremap <leader><space> :nohls<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/FOLDING\___

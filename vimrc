@@ -24,7 +24,7 @@ Plugin 'kien/ctrlp.vim'
 "-------Syntax helpers--------"
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
-" Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 " Plugin 'joonty/vdebug.git'
 "-------Faster editing--------"
 Plugin 'Raimondi/delimitMate'
@@ -91,8 +91,7 @@ set incsearch " Search as characters are entered
 set hlsearch " Highlight matches
 
 " Turn off search highlight
-noremap <leader><leader> :nohlsearch<CR>
-nnoremap <leader><space> :nohls<CR>
+nmap <leader><space> :noh<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/FOLDING\___
@@ -243,16 +242,16 @@ nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/SYNTASTIC\___
 """""""""""""""""""""""""""""""""""""""""""""""""""""
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 0
-" let g:syntastic_check_on_wq = 0
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
 
-" let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['jshint']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/MISCELLANEOUS\___

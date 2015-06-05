@@ -34,6 +34,7 @@ Plugin 'godlygeek/tabular'
 Plugin 'tpope/vim-repeat'
 Plugin 'scrooloose/nerdcommenter'
 "-------Syntax highlight-------"
+Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'groenewege/vim-less'
 Plugin 'digitaltoad/vim-jade'
@@ -242,9 +243,9 @@ nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/SYNTASTIC\___
 """""""""""""""""""""""""""""""""""""""""""""""""""""
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1

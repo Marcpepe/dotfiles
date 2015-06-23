@@ -157,7 +157,7 @@ inoremap jj <ESC>
 inoremap {<CR> {<CR>}<C-o>O
 " The sequence parens + brackets behaves nicely
 inoremap ({<CR> ({<CR>});<C-o>O
-" Remaps K to split a line (opposite of J) 
+" Remaps K to split a line (opposite of J)
 nnoremap K i<CR><Esc>
 " To recognize Alt key in Gnome terminal
 let c='a'
@@ -269,7 +269,20 @@ let g:airline_powerline_fonts = 1
 " Fix backspace behavior
 set backspace=indent,eol,start
 
-" .md files are recognized as Markdown
+
+
+" NerdTree File highlighting
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+ exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
+call NERDTreeHighlightFile('coffee', 'red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('js', 'red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('json', 'cyan', 'none', 'cyan', '#151515')
+
+" .md files are recognized as markdown templates
 au BufRead,BufNewFile *.md set filetype=markdown
 " .html.twig files are recognized as HTML Django templates
 au BufRead,BufNewFile *.twig set filetype=htmldjango

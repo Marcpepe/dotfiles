@@ -134,6 +134,8 @@ nnoremap <leader>p :CtrlP<CR>
 nnoremap <leader>y :CtrlPBuffer<CR>
 " Launch NERDTree
 nnoremap <leader>n :NERDTreeToggle<CR>
+" Find current file in NERDTree
+nnoremap <leader>N :NERDTreeFind<CR>
 " Go to previous buffer
 nmap <leader>j :bp<CR>
 " Go to next buffer
@@ -255,6 +257,21 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['jshint']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
+" ___/NERDTREE\___
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" NerdTree File highlighting
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+ exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
+call NERDTreeHighlightFile('coffee', 'red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('js', 'red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('json', 'cyan', 'none', 'cyan', '#151515')
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/MISCELLANEOUS\___
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " Don't underline between <a> tags when in HTML
@@ -268,19 +285,6 @@ let g:airline_powerline_fonts = 1
 
 " Fix backspace behavior
 set backspace=indent,eol,start
-
-
-
-" NerdTree File highlighting
-function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
- exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
- exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
-endfunction
-
-call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
-call NERDTreeHighlightFile('coffee', 'red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('js', 'red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('json', 'cyan', 'none', 'cyan', '#151515')
 
 " .md files are recognized as markdown templates
 au BufRead,BufNewFile *.md set filetype=markdown

@@ -43,6 +43,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tmux-plugins/vim-tmux'
+Plugin 'ekalinin/Dockerfile.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -268,8 +269,9 @@ endfunction
 
 call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
 call NERDTreeHighlightFile('coffee', 'red', 'none', 'red', '#151515')
-call NERDTreeHighlightFile('js', 'red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('js', 'Magenta', 'none', '#ff00ff', '#151515')
 call NERDTreeHighlightFile('json', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/MISCELLANEOUS\___

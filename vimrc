@@ -162,6 +162,14 @@ inoremap {<CR> {<CR>}<C-o>O
 inoremap ({<CR> ({<CR>});<C-o>O
 " Remaps K to split a line (opposite of J)
 nnoremap K i<CR><Esc>
+" Remaps b
+nnoremap <M-z> b
+" Remaps w
+nnoremap <M-e> w
+" Remaps B
+nnoremap <M-i> B
+" Remaps W
+nnoremap <M-o> W
 " To recognize Alt key in Gnome terminal
 let c='a'
 while c <= 'z'

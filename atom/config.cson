@@ -20,7 +20,6 @@
       "monokai"
     ]
   editor:
-    fontSize: 18
     showIndentGuide: true
     softWrap: true
     invisibles: {}

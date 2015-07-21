@@ -4,6 +4,7 @@
 - Install chrome and connect to your gmail account : you get all your favorites and nav bar automatically
 - Install atom
 - Install git / tmux / vim / zsh / curl with `sudo apt-get install git tmux vim zsh curl`
+- Install tmuxinator (needed if we have binary?): `sudo apt-get install ruby` then `gem install tmuxinator`
 - Clone the project : `git clone git@github.com:Marcpepe/dotfiles.git .dotfiles`
 - Make symbolic links : `cd .dotfiles && ./init.sh`
 - Update vim plugins by starting vim and `:source ~/.vimrc` then `:PluginInstall`

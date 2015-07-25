@@ -141,12 +141,16 @@ nnoremap <leader>N :NERDTreeFind<CR>
 nmap <leader>j :bp<CR>
 " Go to next buffer
 nmap <leader>k :bn<CR>
+" Go to previous tab
+nmap <leader>d :tabp<CR>
+" Go to next tab
+nmap <leader>f :tabn<CR>
 " Close current buffer and go to previous
 nmap <leader>x :bp <BAR> bd #<CR>
 " Open in new fullscreen tab
-nmap <leader>f :tab split<CR>
+nmap <leader>F :tab split<CR>
 " Close current tab
-nmap <leader>d :tabc<CR>
+nmap <leader>D :tabc<CR>
 " Split current horizontally/vertically
 nmap <leader>sb :sp<CR>
 nmap <leader>sv :vs<CR>
@@ -290,6 +294,7 @@ let g:neocomplcache_enable_at_startup = 1
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#bufferline#enabled = 1
 let g:tmuxline_preset = 'nightly_fox'
 let g:airline_powerline_fonts = 1
 

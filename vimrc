@@ -293,8 +293,9 @@ hi link htmlLink NONE
 let g:neocomplcache_enable_at_startup = 1
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
-let g:airline#extensions#bufferline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 0
+let g:airline#extensions#tabline#fnamecollapse = 0
+" let g:airline#extensions#bufferline#enabled = 1
 let g:tmuxline_preset = 'nightly_fox'
 let g:airline_powerline_fonts = 1
 

@@ -148,7 +148,8 @@ nmap <leader>f :tabn<CR>
 " Close current buffer and go to previous
 nmap <leader>x :bp <BAR> bd #<CR>
 " Open in new fullscreen tab
-nmap <leader>F :tab split<CR>
+" nmap <leader>F :tab split<CR>
+nmap <leader>F :tabnew <CR>
 " Close current tab
 nmap <leader>D :tabc<CR>
 " Split current horizontally/vertically

@@ -6,7 +6,6 @@ setopt interactivecomments
 source ~/.z.sh
 source ~/.zsh/antigen.zsh
 source ~/.zsh/pure.zsh
-source ~/.zsh/tmuxinator.zsh
 
 antigen use oh-my-zsh
 antigen bundle command-not-found

@@ -312,6 +312,26 @@ let g:airline_powerline_fonts = 1
 " Fix backspace behavior
 set backspace=indent,eol,start
 
+" Save & Restore Vim sessions
+fu! SaveSess()
+    execute 'call mkdir(%:p:h/.vim)'
+    execute 'mksession! %:p:h/.vim/session.vim'
+endfunction
+
+fu! RestoreSess()
+execute 'so %:p:h/.vim/session.vim'
+if bufexists(1)
+    for l in range(1, bufnr('$'))
+        if bufwinnr(l) == -1
+            exec 'sbuffer ' . l
+        endif
+    endfor
+endif
+endfunction
+
+autocmd VimLeave * call SaveSess()
+autocmd VimEnter * call RestoreSess()
+
 " .md files are recognized as markdown templates
 au BufRead,BufNewFile *.md set filetype=markdown
 " .html.twig files are recognized as HTML Django templates

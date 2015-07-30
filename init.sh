@@ -30,6 +30,9 @@ ln -s $SCRIPTPATH/vimrc ~/.vimrc
 ln -s $SCRIPTPATH/zsh ~/.zsh
 ln -s $SCRIPTPATH/zshrc ~/.zshrc
 
+# Install Tmux Plugin Manager
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 # Powerline fonts for vim airline
 git clone git@github.com:powerline/fonts.git
 cd fonts && sh install.sh

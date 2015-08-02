@@ -14,5 +14,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
 #antigen bundle swirepe/alwaysontop
 antigen apply
-alias dcp='docker-compose'
+alias dkc='docker-compose'
+alias dkm='docker-machine'
 # . ~/z.sh

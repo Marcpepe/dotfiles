@@ -12,6 +12,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
+"-------Session Mngmt--------"
+Plugin 'tpope/vim-obsession'
 "-------Color themes--------"
 Plugin 'tomasr/molokai'
 Plugin 'altercation/vim-colors-solarized'
@@ -286,6 +288,12 @@ call NERDTreeHighlightFile('coffee', 'red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Magenta', 'none', '#ff00ff', '#151515')
 call NERDTreeHighlightFile('json', 'cyan', 'none', 'cyan', '#151515')
 call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
+
+" Open a NERDTree automatically when vim starts up if no files were specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/MISCELLANEOUS\___

@@ -8,11 +8,12 @@ source ~/.zsh/antigen.zsh
 
 antigen use oh-my-zsh
 antigen bundle command-not-found
-antigen bundle git
+# antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
-antigen bundle mafredri/zsh-async
+antigen bundle mafredri/zsh-async #required for pure
 antigen bundle sindresorhus/pure
+antigen bundle docker
 #antigen bundle swirepe/alwaysontop
 antigen apply
 alias dkc='docker-compose'

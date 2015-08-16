@@ -9,4 +9,5 @@
 *.log
 *~
 *.swp
+*.swo
 Session.vim

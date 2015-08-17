@@ -158,6 +158,9 @@ nmap <leader>D :tabc<CR>
 " Split current horizontally/vertically
 nmap <leader>sb :sp<CR>
 nmap <leader>sv :vs<CR>
+" Resize
+nmap <leader>+ :vertical resize +5<CR>
+nmap <leader>- :vertical resize -5<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/REMAPPINGS\___
@@ -178,6 +181,10 @@ nnoremap <M-e> w
 nnoremap <M-i> B
 " Remaps W
 nnoremap <M-o> W
+" Remaps resize +
+" nnoremap <M-=> <C-W><
+" Remaps resize -
+" nnoremap <M-)> <C-W>>
 " To recognize Alt key in Gnome terminal
 let c='a'
 while c <= 'z'
@@ -308,6 +315,7 @@ let g:airline#extensions#tabline#fnamecollapse = 0
 " let g:airline#extensions#bufferline#enabled = 1
 let g:tmuxline_preset = 'nightly_fox'
 let g:airline_powerline_fonts = 1
+" let g:airline_section_z = airline#section#create(["%{ObsessionStatus(''$'','''')}", 'windowswap', '%3p%% ', 'linenr', ':%3v '])
 
 " Fix backspace behavior
 set backspace=indent,eol,start

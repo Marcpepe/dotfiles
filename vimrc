@@ -165,6 +165,8 @@ nmap <leader>- :vertical resize -5<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/REMAPPINGS\___
 """""""""""""""""""""""""""""""""""""""""""""""""""""
+" Remap autocomplete
+inoremap <M-n> <C-n>
 " Remap jj to exit Insert mode
 inoremap jj <ESC>
 " Brackets behave like in Sublime
@@ -174,13 +176,38 @@ inoremap ({<CR> ({<CR>});<C-o>O
 " Remaps K to split a line (opposite of J)
 nnoremap K i<CR><Esc>
 " Remaps b
-nnoremap <M-z> b
-" Remaps w
-nnoremap <M-e> w
+" nnoremap <M-z> b
+
+" Adjust to AZERTY
+nmap z w
+nmap Z W
+
+" nmap az aw
+nmap yaz yaw
+nmap caz caw
+nmap daz daw
+
+" nmap iz iw
+nmap yiz yiw
+nmap ciz ciw
+nmap diz diw
+
+nmap yz yw
+nmap yZ yW
+nmap cz cw
+nmap cZ cW
+nmap dz dw
+nmap dZ dW
+
+" " Remaps w
+" nnoremap <M-e> w
 " Remaps B
 nnoremap <M-i> B
 " Remaps W
 nnoremap <M-o> W
+" Remaps W
+nmap m ;
+
 " Remaps resize +
 " nnoremap <M-=> <C-W><
 " Remaps resize -
@@ -305,13 +332,19 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/MISCELLANEOUS\___
 """""""""""""""""""""""""""""""""""""""""""""""""""""
+" Display file in exact state ==> if file is changed outside Vim, it is displayed correctly
+:set autoread
+
+" Remove .swp file creation
+set noswapfile
+
 " Don't underline between <a> tags when in HTML
 hi link htmlLink NONE
 let g:neocomplcache_enable_at_startup = 1
 set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 0
-let g:airline#extensions#tabline#fnamecollapse = 0
+let g:airline#extensions#tabline#fnamecollapse = 1
 " let g:airline#extensions#bufferline#enabled = 1
 let g:tmuxline_preset = 'nightly_fox'
 let g:airline_powerline_fonts = 1

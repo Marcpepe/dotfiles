@@ -12,6 +12,7 @@
   st  = status
   lg  = log -M --decorate --graph --oneline
   cm  = commit -m
+  ca  = commit --amend
   co  = checkout
   br  = branch
   pur = pull --rebase

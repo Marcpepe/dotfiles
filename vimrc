@@ -317,6 +317,9 @@ function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
  exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
 endfunction
 
+" Show hidden files (.gitignore)
+let NERDTreeShowHidden=1
+
 call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
 call NERDTreeHighlightFile('coffee', 'red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Magenta', 'none', '#ff00ff', '#151515')

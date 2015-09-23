@@ -4,6 +4,14 @@
 .nbproject/
 # IntelliJ
 .idea/
+# Dotfiles
+.bash_history
+.cache
+.config
+.node-gyp
+.npm
+.tmp
+.v8*
 
 *.pyc
 *.log

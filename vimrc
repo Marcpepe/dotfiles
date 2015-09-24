@@ -109,9 +109,14 @@ set foldmethod=syntax " Fold based on indent level
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/SPACES & TABS\___
 """""""""""""""""""""""""""""""""""""""""""""""""""""
-set tabstop=2 " Number of visual spaces by tab
-set shiftwidth=2 " Number of spaces in tab when autoindent
-set softtabstop=2 " Number of spaces in tab when editing
+" Enable for Symfony 2
+set tabstop=4 " Number of visual spaces by tab
+set shiftwidth=4 " Number of spaces in tab when autoindent
+set softtabstop=4 " Number of spaces in tab when editing
+" Enable for Nodejs/Angularjs
+" set tabstop=2 " Number of visual spaces by tab
+" set shiftwidth=2 " Number of spaces in tab when autoindent
+" set softtabstop=2 " Number of spaces in tab when editing
 
 set smarttab " Smart handling of the <TAB> key
 set expandtab " Converts tabs to spaces

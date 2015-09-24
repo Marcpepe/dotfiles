@@ -132,9 +132,9 @@ nnoremap <leader>ev :e ~/.vimrc<CR>
 " Open ag.vim (plugin to search code in a project)
 nnoremap <leader>a :Ag<space>
 " Launch a CtrlP search on files
-nnoremap <leader>p :CtrlP<CR>
+nnoremap <leader>y :CtrlP<CR>
 " Launch a CtrlP search on buffers
-nnoremap <leader>y :CtrlPBuffer<CR>
+nnoremap <leader>p :CtrlPBuffer<CR>
 " Launch NERDTree
 nnoremap <leader>n :NERDTreeToggle<CR>
 " Find current file in NERDTree

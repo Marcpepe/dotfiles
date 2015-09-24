@@ -167,6 +167,8 @@ nmap <leader>- :vertical resize -5<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap autocomplete
 inoremap <M-n> <C-n>
+" Remap autocomplete
+inoremap <M-p> <C-r>0
 " Remap jj to exit Insert mode
 inoremap jj <ESC>
 " Brackets behave like in Sublime

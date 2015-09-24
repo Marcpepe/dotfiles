@@ -348,6 +348,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " Remove .swp file creation
 set noswapfile
 
+" Shortcut for paste mode
+set pastetoggle=<f5>
+
 " Don't underline between <a> tags when in HTML
 hi link htmlLink NONE
 let g:neocomplcache_enable_at_startup = 1

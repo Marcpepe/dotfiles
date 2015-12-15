@@ -26,7 +26,7 @@ Plugin 'kien/ctrlp.vim'
 "-------Syntax helpers--------"
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
-Plugin 'scrooloose/syntastic'
+" Plugin 'scrooloose/syntastic'
 " Plugin 'joonty/vdebug.git'
 "-------Faster editing--------"
 Plugin 'Raimondi/delimitMate'
@@ -46,6 +46,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -307,12 +308,12 @@ nnoremap <silent> <M-l> :TmuxNavigateRight<cr>
 " set statusline+=%{SyntasticStatuslineFlag()}
 " set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 0
+" let g:syntastic_check_on_wq = 0
 
-let g:syntastic_javascript_checkers = ['jshint']
+" let g:syntastic_javascript_checkers = ['jshint']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/NERDTREE\___
@@ -332,6 +333,7 @@ call NERDTreeHighlightFile('coffee', 'red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Magenta', 'none', '#ff00ff', '#151515')
 call NERDTreeHighlightFile('json', 'cyan', 'none', 'cyan', '#151515')
 call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('ts', 'blue', 'none', 'blue', '#151515')
 
 " Open a NERDTree automatically when vim starts up if no files were specified
 autocmd StdinReadPre * let s:std_in=1

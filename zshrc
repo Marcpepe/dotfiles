@@ -18,4 +18,8 @@ antigen bundle docker
 antigen apply
 alias dkc='docker-compose'
 alias dkm='docker-machine'
+dkmEnv() {
+  eval $(dkm env $1)
+}
+alias dke=dkmEnv
 # . ~/z.sh

@@ -16,10 +16,11 @@ antigen bundle sindresorhus/pure
 antigen bundle docker
 #antigen bundle swirepe/alwaysontop
 antigen apply
-alias dkc='docker-compose'
-alias dkm='docker-machine'
 dkmEnv() {
   eval $(dkm env $1)
 }
+alias dkc='docker-compose'
+alias dkm='docker-machine'
 alias dke=dkmEnv
+alias dkx='docker exec -it'
 # . ~/z.sh

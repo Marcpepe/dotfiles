@@ -283,6 +283,10 @@ let g:ctrlp_match_window = 'bottom,order:ttb' " Order files top to bottom
 let g:ctrlp_switch_buffer = 0 " Open files in new buffers
 let g:ctrlp_working_path_mode = 0 " Enables the changing of the working dir
 let g:ctrlp_user_command = 'ag %s -l --nocolor --hidden -g ""' " Use ag.vim
+" set your own custom ignore settings
+let g:ctrlp_custom_ignore = {
+    \ 'dir':  '\.git$\|vendor$\|bower_components$\|dist$\|node_modules$\|test$',
+    \ 'file': '\.exe$\|\.so$\|\.dll$\|\.pyc$' }
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/NERDCommenter\___

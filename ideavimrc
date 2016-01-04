@@ -1,0 +1,53 @@
+let mapleader="," " Leader is comma
+set scrolloff=20
+" Go to previous buffer
+nmap <leader>j :bp<CR>
+" Go to next buffer
+nmap <leader>k :bn<CR>
+" Go to previous tab
+nmap <leader>d :tabp<CR>
+" Go to next tab
+nmap <leader>f :tabn<CR>
+" Close current buffer and go to previous
+nmap <leader>x :bp <BAR> bd #<CR>
+" Open new tab
+nmap <leader>F :tabnew <CR>
+" Open current file in new tab
+nmap <leader>S :tab split<CR>
+" Close current tab
+nmap <leader>D :tabc<CR>
+" Split current horizontally/vertically
+nmap <leader>sb :sp<CR>
+nmap <leader>sv :vs<CR>
+" Turn off search highlight
+nmap <leader><space> :noh<CR>
+
+" Adjust to AZERTY
+nmap z w
+nmap Z W
+
+" nmap az aw
+nmap yaz yaw
+nmap caz caw
+nmap daz daw
+
+" nmap iz iw
+nmap yiz yiw
+nmap ciz ciw
+nmap diz diw
+
+nmap yz yw
+nmap yZ yW
+nmap cz cw
+nmap cZ cW
+nmap dz dw
+nmap dZ dW
+
+" " Remaps w
+" nnoremap <M-e> w
+" Remaps B
+nnoremap <M-i> B
+" Remaps W
+nnoremap <M-o> W
+" Remaps W
+nmap m ;

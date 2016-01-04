@@ -23,6 +23,7 @@ rm ~/.zshrc
 
 ln -s $SCRIPTPATH/atom/config.cson ~/.atom/config.cson
 ln -s $SCRIPTPATH/atom/keymap.cson ~/.atom/keymap.cson
+ln -s $SCRIPTPATH/ideavimrc ~/.ideavimrc
 ln -s $SCRIPTPATH/gitconfig ~/.gitconfig
 ln -s $SCRIPTPATH/gitexcludes ~/.gitexcludes
 ln -s $SCRIPTPATH/tmux.conf ~/.tmux.conf

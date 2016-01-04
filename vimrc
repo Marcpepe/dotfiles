@@ -96,7 +96,7 @@ set incsearch " Search as characters are entered
 set hlsearch " Highlight matches
 
 " Turn off search highlight
-nmap <leader><space> :noh<CR>
+nnoremap <leader><space> :nohl<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/FOLDING\___
@@ -111,16 +111,18 @@ set foldmethod=syntax " Fold based on indent level
 " ___/SPACES & TABS\___
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable for Symfony 2
-set tabstop=4 " Number of visual spaces by tab
-set shiftwidth=4 " Number of spaces in tab when autoindent
-set softtabstop=4 " Number of spaces in tab when editing
+" set tabstop=4 " Number of visual spaces by tab
+" set shiftwidth=4 " Number of spaces in tab when autoindent
+" set softtabstop=4 " Number of spaces in tab when editing
 " Enable for Nodejs/Angularjs
-" set tabstop=2 " Number of visual spaces by tab
-" set shiftwidth=2 " Number of spaces in tab when autoindent
-" set softtabstop=2 " Number of spaces in tab when editing
+set tabstop=2 " Number of visual spaces by tab
+set shiftwidth=2 " Number of spaces in tab when autoindent
+set softtabstop=2 " Number of spaces in tab when editing
 
 set smarttab " Smart handling of the <TAB> key
 set expandtab " Converts tabs to spaces
+
+set scrolloff=20
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/MOVEMENTS\___
@@ -326,7 +328,7 @@ function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
 endfunction
 
 " Show hidden files (.gitignore)
-let NERDTreeShowHidden=1
+let NERDTreeShowHidden=0
 
 call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
 call NERDTreeHighlightFile('coffee', 'red', 'none', 'red', '#151515')

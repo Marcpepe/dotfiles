@@ -24,3 +24,13 @@ alias dkm='docker-machine'
 alias dke=dkmEnv
 alias dkx='docker exec -it'
 # . ~/z.sh
+# Vi mode
+# bindkey -v
+# export KEYTIMEOUT=22
+# bindkey "^B" beginning-of-line
+# bindkey "^E" end-of-line
+# bindkey "jj" vi-cmd-mode
+# bindkey "^P" history-substring-search-up
+# bindkey "^N" history-substring-search-down
+# bindkey "^Q" kill-line
+# bindkey "^U" backward-kill-line

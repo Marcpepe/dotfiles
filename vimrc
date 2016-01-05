@@ -122,7 +122,7 @@ set softtabstop=2 " Number of spaces in tab when editing
 set smarttab " Smart handling of the <TAB> key
 set expandtab " Converts tabs to spaces
 
-set scrolloff=20
+set scrolloff=25
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/MOVEMENTS\___
@@ -149,8 +149,10 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>N :NERDTreeFind<CR>
 " Go to previous buffer
 nmap <leader>j :bp<CR>
+nmap <C-j> :bp<CR>
 " Go to next buffer
 nmap <leader>k :bn<CR>
+nmap <C-k> :bn<CR>
 " Go to previous tab
 nmap <leader>d :tabp<CR>
 " Go to next tab

@@ -51,3 +51,6 @@ nnoremap <M-i> B
 nnoremap <M-o> W
 " Remaps W
 nmap m ;
+
+" Remap jj to exit Insert mode
+inoremap jj <ESC>

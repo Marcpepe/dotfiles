@@ -138,37 +138,44 @@ let mapleader="," " Leader is comma
 " Edit .vimrc
 nnoremap <leader>ev :e ~/.vimrc<CR>
 " Open ag.vim (plugin to search code in a project)
-nnoremap <leader>a :Ag<space>
+" nnoremap <leader>a :Ag<space>
+nnoremap <C-a> :Ag<space>
 " Launch a CtrlP search on files
-nnoremap <leader>y :CtrlP<CR>
+" nnoremap <leader>y :CtrlP<CR>
 nnoremap <C-m> :CtrlP<CR>
 " Launch a CtrlP search on buffers
-nnoremap <leader>p :CtrlPBuffer<CR>
+" nnoremap <leader>p :CtrlPBuffer<CR>
 " Launch NERDTree
 " nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 " Find current file in NERDTree
 " nnoremap <leader>N :NERDTreeFind<CR>
-nnoremap <C-b> :NERDTreeFind<CR>
+nnoremap <M-n> :NERDTreeFind<CR>
 
 " Go to previous buffer
-nmap <leader>j :bp<CR>
+" nmap <leader>j :bp<CR>
 nmap <C-j> :bp<CR>
 " Go to next buffer
-nmap <leader>k :bn<CR>
+" nmap <leader>k :bn<CR>
 nmap <C-k> :bn<CR>
 " Go to previous tab
-nmap <leader>d :tabp<CR>
+" nmap <leader>d :tabp<CR>
+nmap <C-d> :tabp<CR>
 " Go to next tab
-nmap <leader>f :tabn<CR>
+" nmap <leader>f :tabn<CR>
+nmap <C-f> :tabn<CR>
 " Close current buffer and go to previous
-nmap <leader>x :bp <BAR> bd #<CR>
+" nmap <leader>x :bp <BAR> bd #<CR>
+nmap <C-x> :bp <BAR> bd #<CR>
 " Open new tab
-nmap <leader>F :tabnew <CR>
+" nmap <leader>F :tabnew <CR>
+nmap <C-l> :tabnew <CR>
 " Open current file in new tab
-nmap <leader>S :tab split<CR>
+" nmap <leader>S :tab split<CR>
+nmap <C-s> :tab split<CR>
 " Close current tab
-nmap <leader>D :tabc<CR>
+" nmap <leader>D :tabc<CR>
+nmap <C-w> :tabc<CR>
 " Split current horizontally/vertically
 nmap <leader>sb :sp<CR>
 nmap <leader>sv :vs<CR>

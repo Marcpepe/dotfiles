@@ -141,12 +141,16 @@ nnoremap <leader>ev :e ~/.vimrc<CR>
 nnoremap <leader>a :Ag<space>
 " Launch a CtrlP search on files
 nnoremap <leader>y :CtrlP<CR>
+nnoremap <C-m> :CtrlP<CR>
 " Launch a CtrlP search on buffers
 nnoremap <leader>p :CtrlPBuffer<CR>
 " Launch NERDTree
-nnoremap <leader>n :NERDTreeToggle<CR>
+" nnoremap <leader>n :NERDTreeToggle<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 " Find current file in NERDTree
-nnoremap <leader>N :NERDTreeFind<CR>
+" nnoremap <leader>N :NERDTreeFind<CR>
+nnoremap <C-b> :NERDTreeFind<CR>
+
 " Go to previous buffer
 nmap <leader>j :bp<CR>
 nmap <C-j> :bp<CR>
@@ -181,6 +185,7 @@ inoremap <M-n> <C-n>
 inoremap <M-p> <C-r>0
 " Remap jj to exit Insert mode
 inoremap jj <ESC>
+" inoremap <C-f> <ESC>
 " Brackets behave like in Sublime
 inoremap {<CR> {<CR>}<C-o>O
 " The sequence parens + brackets behaves nicely

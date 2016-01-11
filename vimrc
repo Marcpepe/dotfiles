@@ -87,7 +87,7 @@ set number " Enables lines number
 set cursorline " A line indicates where the cursor is
 set wildmenu " visual autocomplete for command menu
 set showmatch "highlignt matching [{()}]
-set scrolloff=3 " Keep 3 lines below and above the cursor
+set scrolloff=29 " Keep 25 lines below and above the cursor
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/SEARCHING\___
@@ -121,8 +121,6 @@ set softtabstop=2 " Number of spaces in tab when editing
 
 set smarttab " Smart handling of the <TAB> key
 set expandtab " Converts tabs to spaces
-
-set scrolloff=25
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " ___/MOVEMENTS\___
@@ -160,10 +158,10 @@ nmap <C-j> :bp<CR>
 nmap <C-k> :bn<CR>
 " Go to previous tab
 " nmap <leader>d :tabp<CR>
-nmap <C-d> :tabp<CR>
+nmap <C-u> :tabp<CR>
 " Go to next tab
 " nmap <leader>f :tabn<CR>
-nmap <C-f> :tabn<CR>
+nmap <C-i> :tabn<CR>
 " Close current buffer and go to previous
 " nmap <leader>x :bp <BAR> bd #<CR>
 nmap <C-x> :bp <BAR> bd #<CR>
@@ -171,14 +169,13 @@ nmap <C-x> :bp <BAR> bd #<CR>
 " nmap <leader>F :tabnew <CR>
 nmap <C-l> :tabnew <CR>
 " Open current file in new tab
-" nmap <leader>S :tab split<CR>
-nmap <C-s> :tab split<CR>
+nmap <leader>S :tab split<CR>
 " Close current tab
 " nmap <leader>D :tabc<CR>
 nmap <C-w> :tabc<CR>
 " Split current horizontally/vertically
-nmap <leader>sb :sp<CR>
-nmap <leader>sv :vs<CR>
+" nmap <leader>sb :sp<CR>
+" nmap <leader>sv :vs<CR>
 " Resize
 nmap <leader>+ :vertical resize +5<CR>
 nmap <leader>- :vertical resize -5<CR>
@@ -187,9 +184,9 @@ nmap <leader>- :vertical resize -5<CR>
 " ___/REMAPPINGS\___
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 " Remap autocomplete
-inoremap <M-n> <C-n>
+inoremap <M-m> <C-n>
 " Remap autocomplete
-inoremap <M-p> <C-r>0
+" inoremap <M-p> <C-r>0
 " Remap jj to exit Insert mode
 inoremap jj <ESC>
 " inoremap <C-f> <ESC>
@@ -274,9 +271,9 @@ vmap <leader>T: :Tabularize /:\zs<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:multi_cursor_use_default_mapping=0
 " Default mapping
-let g:multi_cursor_next_key='<C-n>'
-let g:multi_cursor_prev_key='<C-w>'
-let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_next_key='<C-f>'
+let g:multi_cursor_prev_key='<C-d>'
+let g:multi_cursor_skip_key='<C-s>'
 let g:multi_cursor_quit_key='<Esc>'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""

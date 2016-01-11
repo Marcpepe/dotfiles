@@ -34,3 +34,6 @@ alias dkx='docker exec -it'
 # bindkey "^N" history-substring-search-down
 # bindkey "^Q" kill-line
 # bindkey "^U" backward-kill-line
+
+# Disable Ctrl-S freeze
+stty -ixon

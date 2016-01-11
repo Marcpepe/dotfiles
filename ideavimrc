@@ -1,4 +1,4 @@
-set scrolloff=20
+set scrolloff=29
 
 " Adjust to AZERTY
 nmap z w
@@ -21,12 +21,6 @@ nmap cZ cW
 nmap dz dw
 nmap dZ dW
 
-" " Remaps w
-" nnoremap <M-e> w
-" Remaps B
-nnoremap <M-i> B
-" Remaps W
-nnoremap <M-o> W
 " Remaps W
 nmap m ;
 
